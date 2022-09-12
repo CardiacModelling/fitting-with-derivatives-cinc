@@ -11,7 +11,6 @@ import numpy as np
 
 import methods
 
-# TODO: Make version for paper
 poster = 'poster' in sys.argv or True
 
 c1 = '#fdae61'

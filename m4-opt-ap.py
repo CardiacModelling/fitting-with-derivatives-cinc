@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 import methods
 
-# TODO: Make version for paper
 poster = 'poster' in sys.argv
 
 c1 = '#fdae61'
