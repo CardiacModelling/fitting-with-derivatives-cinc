@@ -4,6 +4,7 @@ This repository contains the code for the CINC 2022 paper _"Derivative-based Inf
 
 ## Requirements
 
+- Python 3.7 or newer.
 - Myokit (github version, 2022-09-12)
 - PINTS (github version, 2022-09-12)
 
@@ -11,9 +12,9 @@ This repository contains the code for the CINC 2022 paper _"Derivative-based Inf
 
 Models, protocols, shared code:
 
-- Model and protocol files are stored in [`resources'](./resources).
-- Python modules used in fitting and stored in [`methods`](./methods).
-- Results are written to the [`results'](./results) directory.
+- Model and protocol files are stored in [resources](./resources).
+- Python modules used in fitting and stored in [methods](./methods).
+- Results are written to the [results](./results) directory.
 
 Benchmarking simulations:
 
