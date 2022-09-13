@@ -133,12 +133,12 @@ ax13.plot(ap_rpr[1], color=c4)
 # Labels
 ax00.text(0.1, 0.8, 'IKr, CMA-ES', transform=ax00.transAxes)
 ax10.text(0.1, 0.8, 'IKr, CMA-ES', transform=ax10.transAxes)
-ax01.text(0.1, 0.8, 'IKr, rProp-', transform=ax01.transAxes)
-ax11.text(0.1, 0.8, 'IKr, rProp-', transform=ax11.transAxes)
+ax01.text(0.1, 0.8, 'IKr, iRprop-', transform=ax01.transAxes)
+ax11.text(0.1, 0.8, 'IKr, iRprop-', transform=ax11.transAxes)
 ax02.text(0.1, 0.8, 'AP, CMA-ES', transform=ax02.transAxes)
 ax12.text(0.1, 0.8, 'AP, CMA-ES', transform=ax12.transAxes)
-ax03.text(0.1, 0.8, 'AP, rProp-', transform=ax03.transAxes)
-ax13.text(0.1, 0.8, 'AP, rProp-', transform=ax13.transAxes)
+ax03.text(0.1, 0.8, 'AP, iRprop-', transform=ax03.transAxes)
+ax13.text(0.1, 0.8, 'AP, iRprop-', transform=ax13.transAxes)
 
 grey = '#f2f2f2'
 ax00.axvspan(0, ik_cma[2], color=grey)
@@ -159,6 +159,12 @@ ax02.axhline(0.05, ls='--', lw=1, color=dark, zorder=1)
 ax12.axhline(0.05, ls='--', lw=1, color=dark, zorder=1)
 ax03.axhline(0.05, ls='--', lw=1, color=dark, zorder=1)
 ax13.axhline(0.05, ls='--', lw=1, color=dark, zorder=1)
+
+print(f'IKr CMA-ES : {ik_cma[2]} and {ik_cma[3]}')
+print(f'IKr iRprop-: {ik_rpr[2]} and {ik_rpr[3]}')
+print(f'AP CMA-ES : {ap_cma[2]} and {ap_cma[3]}')
+print(f'AP iRprop-: {ap_rpr[2]} and {ap_rpr[3]}')
+
 
 # Finalise & store
 fig.align_ylabels([ax00, ax10])

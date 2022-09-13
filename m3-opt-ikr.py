@@ -55,13 +55,13 @@ la = 'CMA-ES'
 for e, f, t in ik_cma:
     ax00.plot(e, f, color=c1, ds=ds, alpha=a, label=la)
     la = None
-la = 'rProp-'
+la = 'iRprop-'
 for e, f, t in ik_rpr:
     ax00.plot(e, f, color='#cccccc', ds=ds, alpha=a, label=la, zorder=0)
     la = None
 ax00.legend(loc='upper right', frameon=poster)
 
-# Top-right: rProp- evaluations
+# Top-right: iRprop- evaluations
 ax01 = fig.add_subplot(grid[0, 1])
 ax01.set_xlabel('Evaluations')
 #ax01.set_ylabel('IKr Error')
@@ -73,7 +73,7 @@ if not poster:
     ax01.set_xticks([0, 5000, 10000, 15000])
     ax01.set_xticklabels(['0', '5k', '10k', '15k'])
     ax01.set_yticks([1e-3, 1, 1e3])
-la = 'rProp-'
+la = 'iRprop-'
 for e, f, t in ik_rpr:
     ax01.plot(e, f, color=c2, ds=ds, alpha=a, label=la)
     la = None
@@ -98,13 +98,13 @@ la = 'CMA-ES'
 for e, f, t in ik_cma:
     ax10.plot(t, f, color=c1, ds=ds, alpha=a, label=la)
     la = None
-la = 'rProp-'
+la = 'iRprop-'
 for e, f, t in ik_rpr:
     ax10.plot(t, f, color='#cccccc', ds=ds, alpha=a, label=la, zorder=0)
     la = None
 ax10.legend(loc='upper right', frameon=poster)
 
-# Bottom-right: rProp- run times
+# Bottom-right: iRprop- run times
 ax11 = fig.add_subplot(grid[1, 1])
 ax11.set_xlabel('Run time (s)')
 #ax11.set_ylabel('IKr Error')
@@ -116,7 +116,7 @@ if not poster:
     ax11.set_xticks([0, 1000, 2000, 3000])
     ax11.set_xticklabels(['0', '1k', '2k', '3k'])
     ax11.set_yticks([1e-3, 1, 1e3])
-la = 'rProp-'
+la = 'iRprop-'
 for e, f, t in ik_rpr:
     ax11.plot(t, f, color=c2, ds=ds, alpha=a, label=la)
     la = None
