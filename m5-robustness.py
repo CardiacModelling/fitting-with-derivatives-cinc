@@ -165,7 +165,6 @@ print(f'IKr iRprop-: {ik_rpr[2]} and {ik_rpr[3]}')
 print(f'AP CMA-ES : {ap_cma[2]} and {ap_cma[3]}')
 print(f'AP iRprop-: {ap_rpr[2]} and {ap_rpr[3]}')
 
-
 # Finalise & store
 fig.align_ylabels([ax00, ax10])
 
